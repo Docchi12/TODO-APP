@@ -1,11 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TODO-App</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/to-do-list.png" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>TODO-App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-link">
+        <div class="profile">
+          <div class="image-profile">
+            <a href="./index.html">
+              <img src="./images/profile-icon.png" alt="profile_icon" />
+            </a>
+          </div>
+          <div class="info-user">
+            <h1>Alfa</h1>
+            <span>Fullstack Developer</span>
+          </div>
+        </div>
+        <div class="datetime">
+          <p class="datetime-day">Senin</p>
+          <time class="datetime-date" datetime="2026-09-28">28/09/2026</time>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <form action="" method="post">
+        <label for="title-task">Task Name</label>
+        <input
+          class="title-class"
+          type="text"
+          id="title-task"
+          name="title-task"
+          placeholder="Enter the task name"
+        />
+
+        <label for="detail-task">Task Details</label>
+        <textarea
+          name="detail-task"
+          id="detail-task"
+          placeholder="Enter the task details"
+        ></textarea>
+
+        <div class="date-columns">
+          <div class="date-column">
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date" name="start-date" />
+          </div>
+          <div class="date-column">
+            <label for="final-date">Final Date</label>
+            <input type="date" id="final-date" name="final-date" />
+          </div>
+        </div>
+
+        <label for="priority-level">Priority level</label>
+        <select name="priority-level" id="priority-level">
+          <option value="">Select your task priority</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="hight">Hight</option>
+        </select>
+
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </main>
+
+    <main></main>
+  </body>
 </html>
