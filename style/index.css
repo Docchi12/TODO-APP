@@ -1,13 +1,13 @@
 @import url("./global.css");
 
 body {
-  background-color: rgb(237, 236, 236);
+  background-color: #fffed9;
 }
 
 /* header */
 header {
   min-width: 360px;
-  background-color: rgb(183, 195, 150);
+  background-color: #8C8815;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -65,7 +65,7 @@ main {
 }
 
 form {
-  background-color: rgb(224, 231, 215);
+  background-color: #F2EF85;
   padding: 20px;
   border-radius: 8px;
   margin-top: 15px;
@@ -128,15 +128,135 @@ select {
   font-weight: 600;
   line-height: 110%;
   letter-spacing: 0.2px;
-  padding: 5px;
+  padding: 10px;
   margin-top: 5px;
   border-radius: 8px;
   border: 1px solid #cccccc;
+  background-color: #fffed9;
 }
 
 .submit-btn:hover {
-  background-color: rgb(183, 195, 150);
+  background-color: #8C8815;
 }
+
+.TODO-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header-list p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+  padding: 5px 10px;
+  border: 1px solid #8C8815;
+  border-radius: 20px;
+  background-color: #FFFDBF;
+
+  display: flex;
+  gap: 5px;
+}
+
+.header-list button:hover {
+  background-color: rgb(229, 59, 59);
+  color: white;
+}
+
+.header-list img {
+  width: 15px;
+  height: 15px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-task {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #F2EF85;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+} 
+
+.card-task input {
+  margin-top: 5px;
+}
+
+.info-task {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header-info-task {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-info-task h1 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+}
+
+.header-info-task span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+  border: 1px solid red;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background-color: rgb(229, 59, 59);
+  color: white;
+}
+
+.info-task p {
+  font-size: 14px;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.info-task span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+}
+
+
+
+
+
+
+
 
 
 
