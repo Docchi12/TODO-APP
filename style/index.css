@@ -2,7 +2,7 @@
 
 /* header */
 header {
-  min-width: 360px;
+  min-width: 0;
   background-color: #8C8815;
   position: sticky;
   top: 0;
@@ -55,7 +55,7 @@ header {
 /* main */
 main {
   width: 95%;
-  min-width: 306px;
+  min-width: 0;
   margin: auto;
 
   display: flex;
@@ -107,6 +107,13 @@ textarea {
 }
 
 .date-column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.priority-submit,
+.priority-field {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -320,11 +327,122 @@ footer p {
   line-height: 110%;
   letter-spacing: 0.2px;
   color: white;
+  text-align: center;
 }
 
+/* Desktop */
+@media (min-width: 1024px) {
+  .nav-link {
+    width: 90%;
+    max-width: 1100px;
+    margin-inline: auto;
+    padding: 20px 0;
+  }
 
+  main {
+    width: 90%;
+    max-width: 1100px;
+    gap: 24px;
+  }
 
+  .date-columns {
+    display: flex;
+    gap: 16px;
+  }
 
+  .date-column {
+    flex: 1;
+    min-width: 0;
+  }
 
+  .date-column input {
+    width: 100%;
+    min-width: 0;
+  }
 
+  .card-task,
+  .card-final-task {
+    min-width: 0;
+  }
 
+  .info-task,
+  .finished-info {
+    min-width: 0;
+  }
+
+  form {
+    gap: 12px;
+    padding: 28px;
+  }
+
+  .priority-submit {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 16px;
+  }
+
+  .priority-submit > * {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .priority-field {
+    gap: 12px;
+  }
+
+  #priority-level {
+    width: 100%;
+  }
+
+  .submit-btn {
+    margin-top: 0;
+  }
+
+  .TODO-section,
+  .finish-tasks-section {
+    gap: 12px;
+  }
+
+  .task-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .finish-tasks-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .finish-tasks-section > h2 {
+    grid-column: 1 / -1;
+  }
+
+  .header-info-task {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .header-info-task h2 {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .header-info-task span,
+  .header-info-task button {
+    flex-shrink: 0;
+  }
+
+  footer {
+    padding: 30px 0;
+  }
+
+  footer p {
+    width: 90%;
+    max-width: 1100px;
+    margin-inline: auto;
+    text-align: center;
+  }
+}
