@@ -1,9 +1,5 @@
 @import url("./global.css");
 
-body {
-  background-color: #fffed9;
-}
-
 /* header */
 header {
   min-width: 360px;
@@ -36,6 +32,7 @@ header {
   font-weight: 500;
   line-height: 100%;
   letter-spacing: 0.2px;
+  color: white;
 }
 
 .info-user span {
@@ -43,6 +40,7 @@ header {
   font-weight: 300;
   line-height: 100%;
   letter-spacing: 0.4px;
+  color: white;
 }
 
 .datetime {
@@ -51,6 +49,7 @@ header {
   line-height: 110%;
   letter-spacing: 0.2px;
   text-align: right;
+  color: white;
 }
 
 /* main */
@@ -137,6 +136,7 @@ select {
 
 .submit-btn:hover {
   background-color: #8C8815;
+  color: white;
 }
 
 .TODO-section {
@@ -210,11 +210,21 @@ select {
 
 .header-info-task {
   display: flex;
-  align-items: center;
-  gap: 50px;
+  justify-content: space-between;
 }
 
-.header-info-task h1 {
+.header-info-task button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-info-task button img {
+  width: 18px;
+  height: 18px;
+}
+
+.header-info-task h2 {
   font-size: 20px;
   font-weight: bold;
   line-height: 110%;
@@ -251,13 +261,66 @@ select {
   letter-spacing: 0.2px;
 }
 
+.finish-tasks-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
+.finish-tasks-section h2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+}
 
+.card-final-task {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 8px;
+  background-color: #FFFDBF;
+}
 
+.card-final-task input {
+  margin-top: 5px;
+}
 
+.finished-info h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+  text-decoration: line-through;
+}
 
+.finished-info span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+}
 
+footer {
+  width: 100%;
+  background-color: #8C8815;
+  padding: 30px;
+  margin-top: 30px;
+  border-top: 1px solid #F2EF85;
 
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+  color: white;
+}
 
 
 
